@@ -1,0 +1,300 @@
+/* Загальні стилі */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Кнопки на головній сторінці */
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/*sssss*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+header a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header button {
+    margin: 10px;
+    font-size: 20px;
+    width: 200px;
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    background: #B2D7F9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #68a8e0;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column; 
+    background-color: #242320;
+    padding: 20px;
+    align-items: center;
+}
+.info-div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; 
+    padding: 20px;
+    border-radius: 10px;
+}
+.info-div h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+.info-div h1 {
+    font-size: 30px;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    width: 100%;
+    margin-top: 20px;
+}
+
+.info-div2, .info-div3 {
+    flex: 1;
+    color: white;
+    border-radius: 10px;
+}
+
+.info-div2 {
+    padding: 20px;
+    margin-right: 120px;
+}
+
+.info-div2 p {
+    opacity: 0.6;
+    color: white;
+    font-size: 25px;
+    margin: 10px 20px 50px 0;
+}
+
+.info-div2 ul {
+    font-size: 25px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.info-div2 ul li {
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.info-div2 ul li::marker {
+    color: rgb(94, 131, 201);
+}
+
+.info-container {
+    margin-inline-end: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-container img {
+    max-width: 100%;
+}
+
+.info-container button {
+    font-size: 1rem;
+    font-weight: 700;
+    width: 60%;
+    height: auto;
+    padding: 12px 25px;
+    background-color: #ffcc00;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.course-section {
+    display: flex;
+    flex-direction: column; 
+    background-color: #f9f9f9;
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+.course-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px; 
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.course-header h3 {
+    color: #4e7fdc;
+    margin-bottom: 15px;
+}
+
+.course-header h1 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.course-wrapper {
+    display: flex;
+    justify-content: center; /* Центрування по горизонталі */
+    flex-wrap: wrap; /* Дозволяє рядкам переноситись */
+    gap: 25px; /* Відстань між блоками */
+    padding: 25px;
+}
+
+.course-card img {
+    width: 60%;
+    max-width: 100%;
+    margin-bottom: 12px;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .course-card {
+        flex: 1 1 calc(50% - 50px); /* Два блоки в ряд для планшетів */
+    }
+}
+
+@media (max-width: 768px) {
+    .course-card {
+        flex: 1 1 calc(100% - 50px); /* Один блок у ряд для мобільних */
+    }
+}
+
+.course-card {
+    flex: 1 1 calc(25% - 50px); 
+    max-width: 320px; 
+    min-width: 240px; 
+    border: 1px solid #3182e4;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+}
+
+.course-card h3 {
+    color: #3182e4;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.course-card a {
+    background-color: #f0f0f0;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #111;
+    transition: background-color 0.3s ease;
+    margin-top: auto; 
+}
+
+.course-card a:hover {
+    background-color: #e6e6e6;
+}
+
+.partners-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-color: #f3f7fe;
+}
+
+.partners-content {
+    display: flex;
+    align-items: center;
+}
+
+.partner-item {
+    flex: 1;
+}
+
+.partner-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; 
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.partner-header h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.partner-header h1 {
+    font-size: 28px;
+    color: #3182e4;
+}
+
+.partner-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.partner-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-rights {
+    background-color: #000;
+    color: #fff;
+    width: 70%;
+    padding: 30px;
+} 
+
+.social-icons img {
+    width: 60%; 
+    margin: 0 12px; 
+}
+
+.social-icons a {
+    text-decoration: none; 
+}
